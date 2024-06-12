@@ -1,7 +1,7 @@
 self.__uv$config = {
   bare: /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)
     ? "/bare/"
-    : ["/bare1/", "/bare2/", "/bare3/"].map(
+    : ["/bare1/", "/bare2/", "/bare3/", "/bare4/"].map(
         (x) =>
           `https://uv.${location.host.replace(/^[^.]*\.(?=\w+\.\w+$)/, "")}${x}`
       ),
